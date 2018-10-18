@@ -1,5 +1,5 @@
-describe('PHP Travels Local Server Test', () => {
-  it('Meets E2E Testing Requirements', () => {
+describe('PHP Travels Local Server Test', function() {
+  it('Meets E2E Testing Requirements', function() {
     cy.visit('/')
     cy.get('header img').should('have.attr', 'src', `./images/phptravels-logo.png`)
     cy.get('h2').should('have.html', 'Application Test Drive.')
